@@ -1,0 +1,82 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+header {
+
+    .bg-img-header-top {
+        background: url(/img/bg-slider-06.jpg) center center / cover;
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+
+        li {
+            list-style: none;
+            font-family: variables.$title-font;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .nav-social-media {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 15px;
+        }
+    }
+
+    .top-header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 175px;
+
+        .h1-div {
+            text-align: center;
+            margin-top: 10px;
+
+        }
+
+        .gold-color {
+            color: variables.$title-font-color;
+            font-family: variables.$title-font;
+            letter-spacing: 0;
+            font-weight: 300;
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
+
+        h1 {
+            color: white;
+            font-family: variables.$font-secondary;
+            letter-spacing: 10px;
+            padding-bottom: 35px;
+            font-size: 1.5rem;
+        }
+
+        .top-header-img {
+            background: url(/img/ic-plate-big.png) no-repeat center/contain;
+            width: 22px;
+            height: 22px;
+        }
+
+        p {
+            color: white;
+            font-family: variables.$font-primary;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+/************ LAYOUT **************/
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?familyRoboto:ital,wght@0,100..900;1,100..900&&display=swap");
+/************** FONT *************/
+/************** COLOR *************/
+header .bg-img-header-top {
+  background: url(/img/bg-slider-06.jpg) center center/cover;
+  height: 100vh;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+header nav li {
+  list-style: none;
+  font-family: "Allura", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+header nav .nav-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+header .top-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding-bottom: 175px;
+}
+header .top-header-container .h1-div {
+  text-align: center;
+  margin-top: 10px;
+}
+header .top-header-container .gold-color {
+  color: #8e6543;
+  font-family: "Allura", sans-serif;
+  letter-spacing: 0;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+header .top-header-container h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 10px;
+  padding-bottom: 35px;
+  font-size: 1.5rem;
+}
+header .top-header-container .top-header-img {
+  background: url(/img/ic-plate-big.png) no-repeat center/contain;
+  width: 22px;
+  height: 22px;
+}
+header .top-header-container p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/************ BASE **************/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */

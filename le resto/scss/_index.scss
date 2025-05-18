@@ -1,0 +1,13 @@
+/************ LAYOUT **************/
+@use 'layout/header';
+@use 'layout/section1';
+@use 'layout/section2';
+@use 'layout/section3';
+@use 'layout/footer';
+
+
+/************ BASE **************/
+@use 'base/body';
+@use 'base/fonts';
+@use 'base/mixins';
+@use 'base/variables';
