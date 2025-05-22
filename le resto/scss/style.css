@@ -78,22 +78,21 @@ header .top-header-container h1 {
   font-family: "Poppins", sans-serif;
   letter-spacing: 10px;
   padding-bottom: 35px;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
 }
 header .top-header-container .top-header-img {
   background: url(/img/ic-plate-big.png) no-repeat center/contain;
-  width: 22px;
-  height: 22px;
+  width: clamp(20px, 10vw, 40px);
+  height: clamp(20px, 10vw, 40px);
 }
 header .top-header-container p {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 1.8vw, 1rem);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: clamp(2rem, 3vw, 4rem);
 }
 header .bottom-header {
   width: 100%;
@@ -178,6 +177,25 @@ header .bottom-header .bottom-header-container .chef-attribute {
   font-size: 0.6rem;
 }
 
+/**************MEDIA QUERIES************/
+@media (min-width: 768px) {
+  header .top-header-container br {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  header .top-header-container .top-header-img {
+    margin-bottom: 25px;
+  }
+  header .top-header-container p {
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  header .top-header-container p {
+    padding-top: 5px;
+  }
+}
 .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,11 +360,18 @@ header .bottom-header .bottom-header-container .chef-attribute {
   bottom: 0;
   background-image: repeating-linear-gradient(to right, rgb(174, 174, 174) 0, rgb(174, 174, 174) 1px, transparent 2px, transparent 6px);
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details1 .img-menu-details1 {
-  background: url(/img/dish-item-01.jpg) no-repeat center/cover;
-  width: 65px;
-  height: 35px;
-  border-radius: 30px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details1 .img-menu-details {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: clamp(48px, 10vw, 55px);
+  height: clamp(50px, 6vw, 70px);
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section1 .bottom-section1 .bottom-section1-container .menu-details1 .img1 {
+  background-image: url(/img/dish-item-01.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details1 div:nth-of-type(2) p:nth-of-type(2) {
   font-size: 0.8rem;
@@ -354,7 +379,7 @@ header .bottom-header .bottom-header-container .chef-attribute {
   color: black;
   padding-top: 5px;
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details1 div :last-of-type {
+.section1 .bottom-section1 .bottom-section1-container .menu-details1 div:last-of-type {
   color: #cdaf74;
   font-size: 0.9rem;
 }
@@ -393,49 +418,39 @@ header .bottom-header .bottom-header-container .chef-attribute {
   color: #cdaf74;
   font-size: 0.9rem;
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details2 {
-  background: url(/img/dish-item-02.jpg) no-repeat center/cover;
-  width: 65px;
-  height: 35px;
-  border-radius: 30px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: clamp(48px, 10vw, 55px);
+  height: clamp(50px, 6vw, 70px);
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details3 {
-  background: url(/img/dish-item-03.jpg) no-repeat center/cover;
-  width: 48px;
-  height: 33px;
-  border-radius: 30px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img2 {
+  background-image: url(/img/dish-item-02.jpg);
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details4 {
-  background: url(/img/dish-item-04.jpg) no-repeat center/cover;
-  width: 48px;
-  height: 33px;
-  border-radius: 30px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img3 {
+  background-image: url(/img/dish-item-03.jpg);
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details5 {
-  background: url(/img/dish-item-05.jpg) no-repeat center/cover;
-  width: 48px;
-  height: 35px;
-  border-radius: 30px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img4 {
+  background-image: url(/img/dish-item-04.jpg);
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details6 {
-  background: url(/img/dish-item-06.jpg) no-repeat center/cover;
-  width: 55px;
-  height: 33px;
-  border-radius: 30px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img5 {
+  background-image: url(/img/dish-item-05.jpg);
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details7 {
-  background: url(/img/dish-item-07.jpg) no-repeat center/cover;
-  width: 44px;
-  height: 34px;
-  border-radius: 30px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img6 {
+  background-image: url(/img/dish-item-06.jpg);
 }
-.section1 .bottom-section1 .bottom-section1-container .menu-details .img-menu-details8 {
-  background: url(/img/dish-item-08.jpg) no-repeat center/cover;
-  width: 50px;
-  height: 35px;
-  border-radius: 15px;
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img7 {
+  background-image: url(/img/dish-item-07.jpg);
+}
+.section1 .bottom-section1 .bottom-section1-container .menu-details .img8 {
+  background-image: url(/img/dish-item-08.jpg);
 }
 
+/**************MEDIA QUERIES************/
 .section2 {
   background-color: #37342f;
   display: -webkit-box;
@@ -606,6 +621,7 @@ header .bottom-header .bottom-header-container .chef-attribute {
   font-weight: 600;
 }
 
+/**************MEDIA QUERIES************/
 .section3 {
   background-color: #37342f;
   padding-top: 100px;
@@ -781,6 +797,7 @@ footer .footer-container div:nth-of-type(1) div i {
   color: gray;
 }
 
+/**************MEDIA QUERIES************/
 /************ BASE **************/
 * {
   -webkit-box-sizing: border-box;

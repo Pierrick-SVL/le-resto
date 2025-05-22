@@ -142,11 +142,18 @@
                             transparent 6px);
                 }
 
-                .img-menu-details1 {
-                    background: url(/img/dish-item-01.jpg) no-repeat center /cover;
-                    width: 65px;
-                    height: 35px;
-                    border-radius: 30px;
+                .img-menu-details {
+                    flex-shrink: 0;
+                    width: clamp(48px, 10vw, 55px);
+                    height: clamp(50px, 6vw, 70px);
+                    border-radius: 40px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .img1 {
+                    background-image: url(/img/dish-item-01.jpg);
                 }
 
                 div:nth-of-type(2) {
@@ -159,7 +166,7 @@
                     }
                 }
 
-                div :last-of-type {
+                div:last-of-type {
                     color: variables.$title-font-color;
                     font-size: 0.9rem;
                 }
@@ -207,55 +214,52 @@
                     font-size: 0.9rem;
                 }
 
-                .img-menu-details2 {
-                    background: url(/img/dish-item-02.jpg) no-repeat center /cover;
-                    width: 65px;
-                    height: 35px;
-                    border-radius: 30px;
+                .img-menu-details {
+                    flex-shrink: 0;
+                    width: clamp(48px, 10vw, 55px);
+                    height: clamp(50px, 6vw, 70px);
+                    border-radius: 40px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
                 }
 
-                .img-menu-details3 {
-                    background: url(/img/dish-item-03.jpg) no-repeat center /cover;
-                    width: 48px;
-                    height: 33px;
-                    border-radius: 30px;
+                // Images assignées dynamiquement
+                .img2 {
+                    background-image: url(/img/dish-item-02.jpg);
                 }
 
-                .img-menu-details4 {
-                    background: url(/img/dish-item-04.jpg) no-repeat center /cover;
-                    width: 48px;
-                    height: 33px;
-                    border-radius: 30px;
+                .img3 {
+                    background-image: url(/img/dish-item-03.jpg);
                 }
 
-                .img-menu-details5 {
-                    background: url(/img/dish-item-05.jpg) no-repeat center /cover;
-                    width: 48px;
-                    height: 35px;
-                    border-radius: 30px;
+                .img4 {
+                    background-image: url(/img/dish-item-04.jpg);
                 }
 
-                .img-menu-details6 {
-                    background: url(/img/dish-item-06.jpg) no-repeat center /cover;
-                    width: 55px;
-                    height: 33px;
-                    border-radius: 30px;
+                .img5 {
+                    background-image: url(/img/dish-item-05.jpg);
                 }
 
-                .img-menu-details7 {
-                    background: url(/img/dish-item-07.jpg) no-repeat center / cover;
-                    width: 44px;
-                    height: 34px;
-                    border-radius: 30px;
+                .img6 {
+                    background-image: url(/img/dish-item-06.jpg);
                 }
 
-                .img-menu-details8 {
-                    background: url(/img/dish-item-08.jpg) no-repeat center /cover;
-                    width: 50px;
-                    height: 35px;
-                    border-radius: 15px;
+                .img7 {
+                    background-image: url(/img/dish-item-07.jpg);
+                }
+
+                .img8 {
+                    background-image: url(/img/dish-item-08.jpg);
                 }
             }
         }
     }
 }
+
+/**************MEDIA QUERIES************/
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 1024px) {}
