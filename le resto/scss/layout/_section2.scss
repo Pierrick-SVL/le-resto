@@ -7,6 +7,14 @@
     flex-direction: column;
     align-items: center;
 
+    .section2-top-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .border-top-section2 {
         width: 90%;
         padding-top: 25px;
@@ -125,6 +133,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            width: clamp(100px, 50vw, 600px);
 
             input,
             select {
@@ -144,19 +153,65 @@
                 background-color: variables.$bg-third-color;
                 color: variables.$font-color2;
                 padding: 5px;
-                width: 80%;
+                width: clamp(30px, 40vw, 150px);
                 border-radius: 20px;
+                border: none;
                 font-family: variables.$font-secondary;
                 font-weight: 600;
             }
         }
     }
-
 }
 
 /**************MEDIA QUERIES************/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .section2 {
+        .section2-top-container {
+            display: grid;
+            grid-template-columns: 35% 65%;
+            width: 90%;
+            margin-top: 40px;
+
+            .border-top-section2 {
+                width: 100%;
+                margin-top: 0;
+                padding-top: 35px;
+                padding-bottom: 35px;
+            }
+
+            .top-container-section2 {
+                white-space: nowrap;
+            }
+
+            .bottom-section2 {
+                width: 100%;
+                height: 100%;
+
+                .bottom-section2-container {
+                    justify-content: center;
+
+                    form {
+                        width: clamp(40%, 30vw, 90%);
+                        display: grid;
+                        grid-template-columns: 50% 50% 50%;
+                        justify-content: center;
+                        gap: 1rem;
+                    }
+
+                    .form-button {
+                        grid-column: 1 / -1; // bouton sur toute la ligne (facultatif)
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
 
 
 @media (min-width: 1024px) {}

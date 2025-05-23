@@ -41,15 +41,15 @@
             h3 {
                 margin-top: 30px;
                 margin-bottom: 30px;
-                font-size: 1.8rem;
+                font-size: clamp(1.8rem, 3vw, 5rem);
                 font-weight: 300;
             }
         }
 
         .top-img-section1 {
             background: url(/img/ic-plate.png) no-repeat center / contain;
-            width: 22px;
-            height: 22px;
+            width: clamp(20px, 8vw, 30px);
+            height: clamp(20px, 8vw, 30px);
             margin-bottom: 5px;
 
         }
@@ -72,7 +72,7 @@
                     list-style: none;
                     font-family: variables.$font-primary;
                     font-weight: 200;
-                    font-size: 0.8rem;
+                    font-size: clamp(0.8rem, 1.2vw, 2rem);
                     color: variables.$font-color2;
                     position: relative;
                     padding-bottom: 10px;
@@ -121,12 +121,15 @@
                 font-family: variables.$font-primary;
                 font-size: 0.8rem;
                 font-weight: 500;
-                display: flex;
+                display: grid;
+                grid-template-columns: auto 1fr auto;
                 align-items: center;
                 gap: 20px;
                 position: relative;
                 padding-bottom: 15px;
                 padding-top: 15px;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
 
                 &::after {
                     position: absolute;
@@ -144,8 +147,8 @@
 
                 .img-menu-details {
                     flex-shrink: 0;
-                    width: clamp(48px, 10vw, 55px);
-                    height: clamp(50px, 6vw, 70px);
+                    width: clamp(48px, 5vw, 70px);
+                    height: clamp(50px, 5vw, 70px);
                     border-radius: 40px;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -177,12 +180,13 @@
                 font-family: variables.$font-primary;
                 font-size: 0.8rem;
                 font-weight: 500;
-                display: flex;
-                align-items: center;
+                display: grid;
+                grid-template-columns: auto 1fr auto;
                 gap: 20px;
+                align-items: center;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
                 position: relative;
-                padding-bottom: 15px;
-                padding-top: 15px;
 
                 &::after {
                     position: absolute;
@@ -216,8 +220,8 @@
 
                 .img-menu-details {
                     flex-shrink: 0;
-                    width: clamp(48px, 10vw, 55px);
-                    height: clamp(50px, 6vw, 70px);
+                    width: clamp(48px, 5vw, 70px);
+                    height: clamp(50px, 5vw, 70px);
                     border-radius: 40px;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -259,7 +263,68 @@
 
 /**************MEDIA QUERIES************/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .section1 {
+        .top-section1 {
+
+            div:nth-of-type(2) {
+
+                nav {
+
+                    ul {
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .bottom-section1 {
+
+            .bottom-section1-container {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                justify-items: center;
+                padding-bottom: 0;
+                padding-top: 15px;
+
+                &::before {
+                    top: 0;
+                }
+
+                .menu-details1 {
+                    margin-top: 0;
+                }
+
+                .menu-details {
+                    padding-top: 15px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
 
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .section1 {
+        .top-section1 {
+
+            .top-img-section1 {
+                margin-bottom: 25px;
+            }
+
+            div:nth-of-type(2) {
+
+                nav {
+
+                    ul {
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
