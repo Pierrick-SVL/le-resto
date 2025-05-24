@@ -39,14 +39,14 @@
         h4:nth-of-type(1) {
             font-family: variables.$title-font;
             color: variables.$title-font-color;
-            font-size: 1.8rem;
+            font-size: clamp(1.8rem, 3vw, 5rem);
             font-weight: 200;
             line-height: 0.8;
         }
 
         h4:nth-of-type(2) {
             font-family: variables.$font-secondary;
-            font-size: 1.2rem;
+            font-size: clamp(1.2rem, 2vw, 4rem);
             font-weight: 600;
             line-height: 0.5;
             margin-bottom: 20px;
@@ -114,7 +114,7 @@
             h4:nth-of-type(1) {
                 font-family: variables.$title-font;
                 color: variables.$title-font-color;
-                font-size: 1.8rem;
+                font-size: clamp(1.8rem, 3vw, 5rem);
                 font-weight: 200;
                 line-height: 0.8;
                 margin-top: 20px;
@@ -122,7 +122,7 @@
 
             h4:nth-of-type(2) {
                 font-family: variables.$font-secondary;
-                font-size: 1.2rem;
+                font-size: clamp(1.2rem, 2vw, 4rem);
                 font-weight: 600;
                 line-height: 0.8;
                 margin-bottom: 30px;
@@ -161,6 +161,10 @@
             }
         }
     }
+}
+
+.section2-bis {
+    display: none;
 }
 
 /**************MEDIA QUERIES************/
@@ -209,6 +213,236 @@
                 }
             }
 
+        }
+    }
+
+    .section2-bis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: variables.$bg-color;
+
+        .section2-bis-top-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            div:first-of-type {
+                h4:nth-of-type(1) {
+                    font-family: variables.$title-font;
+                    color: variables.$title-font-color;
+                    font-size: clamp(1.8rem, 3vw, 5rem);
+                    font-weight: 200;
+                    margin-top: 50px;
+                }
+
+                h4:nth-of-type(2) {
+                    font-family: variables.$font-secondary;
+                    color: variables.$font-color2;
+                    line-height: 0.8;
+                    font-weight: 600;
+                    font-size: clamp(1.2rem, 2vw, 4rem);
+                }
+            }
+        }
+
+        .img-section2-bis-top-container {
+            background: url(/img/ic-plate.png) no-repeat center / contain;
+            width: clamp(20px, 8vw, 30px);
+            height: clamp(20px, 8vw, 30px);
+            margin-bottom: 5px;
+            margin-top: 25px;
+
+        }
+    }
+
+    .section2-bis-bottom-container {
+        display: grid;
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "block1 block3 "
+            "block2 block3";
+
+        .block1 {
+            background-color: variables.$bg-secondary-color;
+            grid-area: block1;
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+            div:nth-of-type(1) {
+                background: url(/img/event-01.jpg) center left / cover;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: variables.$font-color2;
+                    background-color: variables.$bg-color;
+                    font-family: variables.$font-primary;
+                    width: 50%;
+                    padding: 5px 5px;
+                    text-align: center;
+                }
+            }
+
+            div:nth-of-type(2) {
+                font-family: variables.$font-primary;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 15px;
+                width: 85%;
+
+                p:nth-of-type(1) {
+                    font-weight: 300;
+                    margin: 20px 0;
+                    font-size: clamp(0.9rem, 1.4vw, 3rem);
+                }
+
+                div {
+                    background: none;
+                    display: flex;
+                    justify-content: flex-start;
+                    white-space: nowrap;
+                    margin-bottom: 10px;
+                    font-size: clamp(0.6rem, 1vw, 2rem);
+
+                    div:nth-of-type(1) {
+                        display: flex;
+                        gap: 5px;
+                    }
+
+                    div:nth-of-type(2) {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                    }
+
+                    i,
+                    span {
+                        color: gray;
+                    }
+
+                    span {
+                        font-weight: 200;
+                    }
+                }
+
+                p:nth-of-type(2) {
+                    font-weight: 400;
+                    font-size: clamp(0.7rem, 1.2vw, 2rem);
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .block2 {
+            background-color: variables.$bg-secondary-color;
+            grid-area: block2;
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+            div:nth-of-type(1) {
+                background: url(/img/event-02.jpg) center left / cover;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: variables.$font-color2;
+                    background-color: variables.$bg-color;
+                    font-family: variables.$font-primary;
+                    width: 50%;
+                    padding: 5px 5px;
+                    text-align: center;
+                }
+            }
+
+            div:nth-of-type(2) {
+                font-family: variables.$font-primary;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 15px;
+                width: 85%;
+
+                p:nth-of-type(1) {
+                    font-weight: 300;
+                    margin: 20px 0;
+                    font-size: clamp(0.9rem, 1.4vw, 3rem);
+                }
+
+                div {
+                    background: none;
+                    display: flex;
+                    justify-content: flex-start;
+                    white-space: nowrap;
+                    margin-bottom: 10px;
+                    font-size: clamp(0.6rem, 1vw, 2rem);
+
+                    div:nth-of-type(1) {
+                        display: flex;
+                        gap: 5px;
+                    }
+
+                    div:nth-of-type(2) {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                    }
+
+                    i,
+                    span {
+                        color: gray;
+                    }
+
+                    span {
+                        font-weight: 200;
+                    }
+                }
+
+                p:nth-of-type(2) {
+                    font-weight: 400;
+                    font-size: clamp(0.7rem, 1.2vw, 2rem);
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+
+
+        .block3 {
+            background-color: variables.$bg-secondary-color;
+            background: url(/img/event-03.jpg) center center / cover;
+            grid-area: block3;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 3;
+
+            .block3-container {
+                background-color: variables.$bg-secondary-color;
+                height: 90%;
+                width: 90%;
+                z-index: 2;
+
+                div {
+                    z-index: 1;
+                }
+            }
         }
     }
 }
