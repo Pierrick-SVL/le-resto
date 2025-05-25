@@ -10,7 +10,7 @@
     position: relative;
 
     .bg-img-section3 {
-        background: url(/img/gmap.jpg) center bottom / cover no-repeat;
+        background: url(/img/gmap.jpg) center 45%/ cover no-repeat;
         position: absolute;
         width: 100%;
         height: 275px;
@@ -51,10 +51,10 @@
                 text-align: center;
                 font-family: variables.$font-primary;
                 font-weight: 200;
-                font-size: 0.8rem;
+                font-size: clamp(0.8rem, 1vw, 2.5rem);
 
                 span {
-                    font-size: 2rem;
+                    font-size: clamp(2rem, 2.5vw, 3.5rem);
                     font-family: variables.$before-after-font;
                     vertical-align: middle;
                     color: #444;
@@ -73,14 +73,14 @@
             }
 
             p:nth-of-type(2) {
-                font-size: 1.2rem;
+                font-size: clamp(1.2rem, 1.8vw, 2rem);
                 font-family: variables.$font-primary;
                 font-weight: 350;
                 margin-bottom: 15px;
             }
 
             p:nth-of-type(3) {
-                font-size: 0.8rem;
+                font-size: clamp(0.8rem, 1.2vw, 2.5rem);
                 font-family: variables.$font-primary;
                 color: variables.$title-font-color;
                 font-weight: 350;
@@ -92,7 +92,34 @@
 
 /**************MEDIA QUERIES************/
 
-@media (min-width: 768px) {}
+@media (min-width: 450px) {
+
+    .section3 {
+
+        .bg-img-section3 {
+            background: url(/img/gmap.jpg) center 50px / cover no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .section3 {
+
+        .bg-img-section3 {
+            background: url(/img/gmap.jpg) center 45% / cover no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 275px;
+            bottom: 0;
+        }
+    }
+}
+
+
 
 
 @media (min-width: 1024px) {}

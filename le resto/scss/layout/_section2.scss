@@ -275,7 +275,7 @@
             display: grid;
             grid-template-columns: 30% 70%;
 
-            div:nth-of-type(1) {
+            .img-container-block1 {
                 background: url(/img/event-01.jpg) center left / cover;
                 height: 100%;
                 width: 100%;
@@ -283,13 +283,18 @@
                 justify-content: center;
                 align-items: center;
 
-                p {
+                .gray-carre {
                     color: variables.$font-color2;
-                    background-color: variables.$bg-color;
                     font-family: variables.$font-primary;
-                    width: 50%;
+                    font-size: clamp(1rem, 1.5vw, 2rem);
                     padding: 5px 5px;
                     text-align: center;
+                    background-color: variables.$bg-color;
+                    width: clamp(60px, 6vw, 200px);
+                    height: clamp(60px, 6vw, 200px);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 
@@ -350,22 +355,27 @@
             display: grid;
             grid-template-columns: 30% 70%;
 
-            div:nth-of-type(1) {
+            .img-container-block2 {
                 background: url(/img/event-02.jpg) center left / cover;
                 height: 100%;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
 
-                p {
-                    color: variables.$font-color2;
-                    background-color: variables.$bg-color;
-                    font-family: variables.$font-primary;
-                    width: 50%;
-                    padding: 5px 5px;
-                    text-align: center;
-                }
+            .gray-carre {
+                color: variables.$font-color2;
+                font-family: variables.$font-primary;
+                font-size: clamp(1rem, 1.5vw, 2rem);
+                padding: 5px 5px;
+                text-align: center;
+                background-color: variables.$bg-color;
+                width: clamp(60px, 6vw, 200px);
+                height: clamp(60px, 6vw, 200px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             div:nth-of-type(2) {
@@ -420,7 +430,6 @@
         }
 
 
-
         .block3 {
             background-color: variables.$bg-secondary-color;
             background: url(/img/event-03.jpg) center center / cover;
@@ -435,17 +444,80 @@
 
             .block3-container {
                 background-color: variables.$bg-secondary-color;
-                height: 90%;
-                width: 90%;
+                height: 85%;
+                width: 85%;
                 z-index: 2;
 
                 div {
                     z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    div:nth-of-type(1) {
+                        background-color: variables.$bg-color;
+                        width: clamp(60px, 6vw, 200px);
+                        height: clamp(60px, 6vw, 200px);
+                    }
+
+                    .gray-carre {
+                        color: variables.$font-color2;
+                        font-family: variables.$font-primary;
+                        font-size: clamp(1rem, 1.5vw, 2rem);
+                        padding: 5px 5px;
+                        text-align: center;
+                    }
+                }
+
+                .block3-text-container {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+
+                    p:nth-of-type(1) {
+                        margin-top: 30px;
+                        font-family: variables.$font-primary;
+                        font-weight: 300;
+                        font-size: clamp(0.9rem, 1.4vw, 3rem);
+                    }
+
+                    .map-clock-container {
+                        display: flex;
+                        flex-direction: row;
+                        white-space: nowrap;
+                        background-color: transparent;
+                        width: 50%;
+
+                        div:nth-of-type(1),
+                        div:nth-of-type(2) {
+                            background-color: transparent;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            gap: 5px;
+                            font-size: clamp(0.6rem, 1vw, 2rem);
+                            color: gray;
+                            font-family: variables.$font-primary;
+                            font-weight: 300;
+                        }
+
+                        div:nth-of-type(2) {
+                            margin-left: 15px;
+                        }
+                    }
+
+                    p:nth-of-type(2) {
+                        font-weight: 400;
+                        font-size: clamp(0.7rem, 1.2vw, 2rem);
+                        margin-bottom: 50px;
+                        font-family: variables.$font-primary;
+                    }
                 }
             }
         }
     }
 }
-
 
 @media (min-width: 1024px) {}

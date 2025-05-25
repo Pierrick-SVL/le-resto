@@ -1,6 +1,11 @@
 @use '../base/variables';
 @use '../base/mixins';
 
+
+.footer-desktop {
+    display: none;
+}
+
 footer {
     background-color: variables.$bg-color;
     color: variables.$font-color2;
@@ -23,7 +28,7 @@ footer {
             margin-bottom: 40px;
 
             label {
-                font-size: 0.8rem;
+                font-size: clamp(0.8rem, 1vw, 1.5rem);
                 font-family: variables.$font-primary;
                 font-weight: 600;
             }
@@ -31,7 +36,9 @@ footer {
 
             input {
                 margin-top: 5px;
-                width: 60%;
+                width: clamp(150px, 30vw, 300px);
+                height: clamp(35px, 5vw, 60px);
+                font-size: clamp(0.9rem, 1.5vw, 1.3rem);
                 padding: 5px;
                 background-color: transparent;
                 border: 1px solid gray;
@@ -41,30 +48,114 @@ footer {
         div:nth-of-type(1) {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
+            align-items: center;
             margin-bottom: 20px;
+            gap: 25px;
 
             h5 {
-                font-size: 0.8rem;
+                font-size: clamp(0.8rem, 1vw, 1.5rem);
                 font-family: variables.$font-primary;
                 font-weight: 600;
             }
 
             div {
                 gap: 25px;
+                margin-bottom: 0;
 
                 i {
-                    font-size: 0.8rem;
+                    font-size: clamp(0.8rem, 1vw, 1.5rem);
                     color: gray;
                 }
             }
         }
     }
+
+    .footer-container-desktop {
+        display: none;
+    }
 }
 
 /**************MEDIA QUERIES************/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    footer {
+        display: none;
+    }
+
+    .footer-desktop {
+        display: flex;
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+
+            .footer-container-left-part {
+                height: 100%;
+                background-color: variables.$bg-third-color;
+                padding: 20px;
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                    margin: 0;
+                    gap: 10px;
+                    align-items: flex-start;
+
+                    h5,
+                    p {
+                        margin: 0;
+                    }
+
+                    h5 {
+                        font-family: variables.$title-font;
+                        color: variables.$title-font-color;
+                        font-size: clamp(1.5rem, 2vw, 3rem)
+                    }
+
+                    p {
+                        line-height: 1.8;
+                        font-weight: 200;
+                        font-family: variables.$font-primary;
+                        color: variables.$font-color2;
+                        font-size: clamp(0.8rem, 1vw, 1.5rem);
+                    }
+                }
+            }
+
+            .footer-right-part {
+                background-color: variables.$bg-color;
+
+
+                .footer-container-right-part {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 15px;
+
+                    div:nth-of-type(1) {
+                        gap: 30px;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        div:nth-of-type(1) {
+                            align-items: center;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 @media (min-width: 1024px) {}
