@@ -146,7 +146,7 @@ header .bottom-header .bottom-header-container .basic-title {
   font-weight: 700;
 }
 header .bottom-header .bottom-header-container .bottom-header-img1 {
-  background: url(/img/ic-plate.png) no-repeat center/contain;
+  background: url(../img/ic-plate.png) no-repeat center/contain;
   width: 22px;
   height: 22px;
   margin-top: 20px;
@@ -160,7 +160,7 @@ header .bottom-header .bottom-header-container .header-p {
   margin-bottom: 20px;
 }
 header .bottom-header .bottom-header-container .bottom-header-img2 {
-  background: url(/img/avatar-01.jpg) no-repeat center/contain;
+  background: url(../img/avatar-01.jpg) no-repeat center/contain;
   width: 62px;
   height: 62px;
   border-radius: 50%;
@@ -233,7 +233,7 @@ header .bottom-header .bottom-header-right-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: url(/img/store-01.jpg) center center/cover;
+    background: url(../img/store-01.jpg) center center/cover;
     height: 100%;
     width: 100%;
   }
@@ -259,7 +259,7 @@ header .bottom-header .bottom-header-right-container {
   z-index: 1;
 }
 .section1 .bg-img-section1 {
-  background: url(/img/bg-menu-01.jpg) center bottom/cover no-repeat;
+  background: url(../img/bg-menu-01.jpg) center bottom/cover no-repeat;
   position: absolute;
   width: 100%;
   height: 500px;
@@ -305,7 +305,7 @@ header .bottom-header .bottom-header-right-container {
   font-weight: 300;
 }
 .section1 .top-section1 .top-img-section1 {
-  background: url(/img/ic-plate.png) no-repeat center/contain;
+  background: url(../img/ic-plate.png) no-repeat center/contain;
   width: clamp(20px, 8vw, 30px);
   height: clamp(20px, 8vw, 30px);
   margin-bottom: 5px;
@@ -419,7 +419,7 @@ header .bottom-header .bottom-header-right-container {
   background-size: cover;
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details1 .img1 {
-  background-image: url(/img/dish-item-01.jpg);
+  background-image: url(../img/dish-item-01.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details1 div:nth-of-type(2) p:nth-of-type(2) {
   font-size: 0.8rem;
@@ -476,25 +476,25 @@ header .bottom-header .bottom-header-right-container {
   background-size: cover;
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details .img2 {
-  background-image: url(/img/dish-item-02.jpg);
+  background-image: url(../img/dish-item-02.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details .img3 {
-  background-image: url(/img/dish-item-03.jpg);
+  background-image: url(../img/dish-item-03.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details .img4 {
-  background-image: url(/img/dish-item-04.jpg);
+  background-image: url(../img/dish-item-04.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details .img5 {
-  background-image: url(/img/dish-item-05.jpg);
+  background-image: url(../img/dish-item-05.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details .img6 {
-  background-image: url(/img/dish-item-06.jpg);
+  background-image: url(../img/dish-item-06.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details .img7 {
-  background-image: url(/img/dish-item-07.jpg);
+  background-image: url(../img/dish-item-07.jpg);
 }
 .section1 .bottom-section1 .bottom-section1-container .menu-details .img8 {
-  background-image: url(/img/dish-item-08.jpg);
+  background-image: url(../img/dish-item-08.jpg);
 }
 
 /**************MEDIA QUERIES************/
@@ -611,7 +611,7 @@ header .bottom-header .bottom-header-right-container {
   margin-bottom: 20px;
 }
 .section2 .top-img-section2 {
-  background: url(/img/ic-plate.png) no-repeat center/contain;
+  background: url(../img/ic-plate.png) no-repeat center/contain;
   width: 22px;
   height: 22px;
   margin-bottom: 30px;
@@ -814,7 +814,7 @@ header .bottom-header .bottom-header-right-container {
     font-size: clamp(1.2rem, 2vw, 4rem);
   }
   .section2-bis .img-section2-bis-top-container {
-    background: url(/img/ic-plate.png) no-repeat center/contain;
+    background: url(../img/ic-plate.png) no-repeat center/contain;
     width: clamp(20px, 8vw, 30px);
     height: clamp(20px, 8vw, 30px);
     margin-bottom: 5px;
@@ -839,7 +839,7 @@ header .bottom-header .bottom-header-right-container {
     grid-template-columns: 30% 70%;
   }
   .section2-bis-bottom-container .block1 .img-container-block1 {
-    background: url(/img/event-01.jpg) center left/cover;
+    background: url(../img/event-01.jpg) center left/cover;
     height: 100%;
     width: 100%;
     display: -webkit-box;
@@ -938,7 +938,7 @@ header .bottom-header .bottom-header-right-container {
     grid-template-columns: 30% 70%;
   }
   .section2-bis-bottom-container .block2 .img-container-block2 {
-    background: url(/img/event-02.jpg) center left/cover;
+    background: url(../img/event-02.jpg) center left/cover;
     height: 100%;
     width: 100%;
     display: -webkit-box;
@@ -1032,7 +1032,7 @@ header .bottom-header .bottom-header-right-container {
   }
   .section2-bis-bottom-container .block3 {
     background-color: #ffffff;
-    background: url(/img/event-03.jpg) center center/cover;
+    background: url(../img/event-03.jpg) center center/cover;
     grid-area: block3;
     height: 100%;
     width: 100%;

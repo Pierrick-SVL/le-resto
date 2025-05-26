@@ -54,7 +54,7 @@
     }
 
     .top-img-section2 {
-        background: url(/img/ic-plate.png) no-repeat center / contain;
+        background: url(../img/ic-plate.png) no-repeat center / contain;
         width: 22px;
         height: 22px;
         margin-bottom: 30px;
@@ -248,7 +248,7 @@
         }
 
         .img-section2-bis-top-container {
-            background: url(/img/ic-plate.png) no-repeat center / contain;
+            background: url(../img/ic-plate.png) no-repeat center / contain;
             width: clamp(20px, 8vw, 30px);
             height: clamp(20px, 8vw, 30px);
             margin-bottom: 5px;
@@ -276,7 +276,7 @@
             grid-template-columns: 30% 70%;
 
             .img-container-block1 {
-                background: url(/img/event-01.jpg) center left / cover;
+                background: url(../img/event-01.jpg) center left / cover;
                 height: 100%;
                 width: 100%;
                 display: flex;
@@ -356,7 +356,7 @@
             grid-template-columns: 30% 70%;
 
             .img-container-block2 {
-                background: url(/img/event-02.jpg) center left / cover;
+                background: url(../img/event-02.jpg) center left / cover;
                 height: 100%;
                 width: 100%;
                 display: flex;
@@ -432,7 +432,7 @@
 
         .block3 {
             background-color: variables.$bg-secondary-color;
-            background: url(/img/event-03.jpg) center center / cover;
+            background: url(../img/event-03.jpg) center center / cover;
             grid-area: block3;
             height: 100%;
             width: 100%;
