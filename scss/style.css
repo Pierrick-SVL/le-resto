@@ -240,7 +240,7 @@ header .bottom-header .bottom-header-right-container {
 }
 @media (min-width: 1200px) {
   header .top-header-container p {
-    padding-top: 5px;
+    padding-top: 6px;
   }
 }
 .section1 {
