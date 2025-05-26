@@ -8,7 +8,7 @@ Maquette complète d'un site vitrine pour un restaurant fictif, codée en HTML5,
 
 | Desktop                      | Mobile                        |
 |-----------------------------|-------------------------------|
-| ![](img/capture-desktop.png) | ![](img/capture-mobile.png)   |
+|![](maquette%20desktop.png) | ![](maquette%20mobile.png)   |
 
 ## 🚀 Fonctionnalités
 
