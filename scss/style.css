@@ -84,7 +84,7 @@ header .top-header-container h1 {
   font-size: clamp(1.5rem, 4vw, 3.5rem);
 }
 header .top-header-container .top-header-img {
-  background: url(/img/ic-plate-big.png) no-repeat center/contain;
+  background: url(../img/ic-plate-big.png) no-repeat center/contain;
   width: clamp(20px, 10vw, 40px);
   height: clamp(20px, 10vw, 40px);
 }
